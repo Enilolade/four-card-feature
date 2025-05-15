@@ -74,9 +74,9 @@ h1 {
   padding: 2rem;
 }
 
-/* .card > * {
-  border: 1px solid var(--grey-400);
-} */
+.card p {
+  margin-top: 10px;
+}
 
 .green-card {
   border-top: 6px solid var(--cyan);
@@ -119,14 +119,21 @@ footer {
   color: inherit;
 }
 
+@media screen and (min-width: 640px) {
+  .content {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .heading p {
     max-width: 40%;
   }
 
   .content {
+    max-width: 100%;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
   }
 
   .green-card {
